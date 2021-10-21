@@ -27,10 +27,10 @@ jobs:
         & "C:\Program Files\Parasoft\C++test\2021.2\cpptest\bin\cpptesttrace.exe" make all
       working-directory: ./
 
-    # - name: Remove Workspace
-    #  run: |
-    #     Remove-Item -Recurse ../workspace
-    #  working-directory: ./
+    - name: Remove Workspace
+      run: |
+         Remove-Item -Recurse ../workspace
+      working-directory: ./
 
     - name: Run C++test
       # Use the 'run-cpptest-action' GitHub Action.
@@ -40,7 +40,7 @@ jobs:
         compilerConfig: 'gcc_4_9'
         testConfig: 'builtin://MISRA C 2012'
         reportFormat: xml,html,sarif
-        input: './cpptest_GitHub_Actions_MISRA/cpptestscan.bdf'
+        input: './cpptestscan.bdf'
         additionalParams: '-localsettings ./settings.properties -localsettings ../cpptestcli.properties -publish'
         commandLinePattern: '${cpptestcli} -data ../workspace -config "${testConfig}" -report "${reportDir}" -bdf "${input}" ${additionalParams}'
 
