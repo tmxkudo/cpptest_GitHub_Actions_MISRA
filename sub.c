@@ -1,6 +1,6 @@
 #include "inc.h"
 
-unsigned int sub ( bool_t b, unsigned int *p )
+uint16_t sub ( bool_t b, uint16_t *p )
 {
     if ( b )
     {
