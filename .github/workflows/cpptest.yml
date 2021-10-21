@@ -27,10 +27,10 @@ jobs:
         & "C:\Program Files\Parasoft\C++test\2021.2\cpptest\bin\cpptesttrace.exe" make all
       working-directory: ./
 
-    # - name: Remove Workspace
-    #  run: |
-    #     Remove-Item -Recurse ../workspace
-    #  working-directory: ./
+    - name: Remove Workspace
+      run: |
+         Remove-Item -Recurse ../workspace
+      working-directory: ./
 
     - name: Run C++test
       # Use the 'run-cpptest-action' GitHub Action.
