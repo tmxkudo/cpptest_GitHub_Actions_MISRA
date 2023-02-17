@@ -4,6 +4,7 @@ void sample ( void );
 uint16_t sub ( bool_t b, uint16_t *p );
 
 int hoge  ;
+int uma ;
 
 void sample ( void )
 {
