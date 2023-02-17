@@ -24,7 +24,7 @@ jobs:
       env:
         CPPTEST_SCAN_PROJECT_NAME: MISRA
       run: |
-        & "C:\Parasoft\C++test\2021.2\cpptest\bin\cpptesttrace.exe" make all
+        & "C:\Parasoft\2021.2\cpptest\bin\cpptesttrace.exe" make all
       working-directory: ./
 
     - name: Remove Workspace
@@ -36,7 +36,7 @@ jobs:
       # Use the 'run-cpptest-action' GitHub Action.
       uses: parasoft/run-cpptest-action@1.0.1
       with:
-        installDir: 'C:\Parasoft\C++test\2021.2\cpptest'
+        installDir: 'C:\Parasoft\2021.2\cpptest'
         compilerConfig: 'gcc_7-64'
         testConfig: 'builtin://MISRA C 2012'
         reportFormat: xml,html,sarif
