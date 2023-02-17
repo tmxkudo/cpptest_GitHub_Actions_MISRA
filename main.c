@@ -10,6 +10,6 @@ void sample ( void )
     ret = sub ( false, &arg );
     if ( (arg == 3U) && (ret == 0U) )
     {
-    }
+    } 
     return ; 
 }
