@@ -11,5 +11,5 @@ void sample ( void )
     if ( (arg == 3U) && (ret == 0U) )
     {
     }
-    return ;
+    return ; 
 }
