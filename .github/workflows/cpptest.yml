@@ -18,7 +18,6 @@ jobs:
 
     steps:
     - name: Checkout code
-      paths: 'C:\Program Files\Git\bin'
       uses: actions/checkout@v3
     
     - name: Generate BDF
