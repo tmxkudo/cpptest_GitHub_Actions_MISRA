@@ -5,6 +5,7 @@ uint16_t sub ( bool_t b, uint16_t *p );
 
 int hoge  ;
 int uma ;
+int hogehoge ;
 
 void sample ( void )
 {
