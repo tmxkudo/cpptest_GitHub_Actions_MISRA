@@ -9,6 +9,7 @@ void sample ( void )
     uint16_t arg;
 
     int hoge;
+    int foo ;
 
     sub ( false, &arg ); /* comment */
     if ( arg == 3U )
