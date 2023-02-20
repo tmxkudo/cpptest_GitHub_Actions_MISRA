@@ -10,7 +10,6 @@ void sample ( void )
 
     int hoge;
     int foo ;
-    foo = hoge ;
 
     sub ( false, &arg ); /* comment */
     if ( arg == 3U )
