@@ -12,6 +12,7 @@ void sample ( void )
     int foo ;
     int bar ;
     int uma ;
+    int uma2 ;
 
     sub ( false, &arg ); /* comment */
     if ( arg == 3U )
