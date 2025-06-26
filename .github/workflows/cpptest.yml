@@ -53,7 +53,7 @@ jobs:
       with:
         installDir: 'C:\Parasoft\24.2\cpptest'
         compilerConfig: 'gcc_7-64'
-        testConfig: 'builtin://MISRA C 2012'
+        testConfig: 'builtin://MISRA C 2023 (MISRA C 2012)'
         reportFormat: xml,html,sarif
         input: './cpptestscan.bdf'
         additionalParams: '-localsettings ./settings.properties -publish'
