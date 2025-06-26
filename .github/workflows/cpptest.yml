@@ -41,6 +41,11 @@ jobs:
       run: |
         & "C:\Parasoft\24.2\cpptest\bin\cpptesttrace.exe" make all
 
+    - name: Remove Workspace
+      run: |
+         Remove-Item -Recurse ../workspace
+      working-directory: ./
+
     # Runs code analysis with C/C++test.
     - name: Run C/C++test
       # Use the 'run-cpptest-action' GitHub action.
