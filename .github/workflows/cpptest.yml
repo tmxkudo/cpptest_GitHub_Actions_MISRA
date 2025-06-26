@@ -51,8 +51,8 @@ jobs:
         testConfig: 'builtin://MISRA C 2012'
         reportFormat: xml,html,sarif
         input: './cpptestscan.bdf'
-        additionalParams: '-localsettings ./settings.properties -publish'
-        commandLinePattern: '${cpptestcli} -data ../workspace -config "${testConfig}" -report "${reportDir}" -bdf "${input}" ${additionalParams}'
+        additionalParams: '-localsettings ./settings.properties'
+        commandLinePattern: '${cpptestcli} -J-Duser.language=EN -J-Duser.country=US -data ../workspace -config "${testConfig}" -report "${reportDir}" -bdf "${input}" ${additionalParams}'
 
     # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
     - name: Upload results (SARIF)
